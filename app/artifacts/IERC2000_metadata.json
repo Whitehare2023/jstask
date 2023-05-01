@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.6.10+commit.00c0fcaf"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_owner",
+						"type": "string"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_from",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_to",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"app/IERC2000.sol": "IERC2000"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"app/IERC2000.sol": {
+			"keccak256": "0x35a4df8fcf97166036aa81d83fbb718f2cdc1fd0209c902e4aa66a1db40c49b9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://432befcbb3439462a817ec1fb2b46d3031ebd5a0e2b66a124ef0fc6511c74ca8",
+				"dweb:/ipfs/QmVGkD7T9MK1NxXiAFfkbsJab9p858TSeCfAuquMY4jj7t"
+			]
+		}
+	},
+	"version": 1
+}

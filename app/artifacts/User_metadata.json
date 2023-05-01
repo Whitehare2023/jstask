@@ -1,0 +1,109 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "passwd",
+						"type": "string"
+					}
+				],
+				"name": "login",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "passwd",
+						"type": "string"
+					}
+				],
+				"name": "register",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"app/User.sol": "User"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"app/IUSER.sol": {
+			"keccak256": "0x07c9b5dbc3d25446ad566f0ffdd848d88fc1b6e7813fac53c539dbf2e73d5cd0",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://67ebffb94b72d1751433ddb743d4b282097e1e5d711b117ce8c77f481b220eae",
+				"dweb:/ipfs/QmUNye8fgB41M9MkSVzp6MXseVSV3vpZQeUYh5GVf53xDf"
+			]
+		},
+		"app/User.sol": {
+			"keccak256": "0x67f2b0d9e2801bf4ea0a63c1054834dd3c24055eae5f8660337b1d06a2a82874",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8400291454ef9ab7f7b04144a79ce89de1e6ac5e4189e5e7c33c2cadc3b76b69",
+				"dweb:/ipfs/QmRT2FmruEzCA9qu23MHefeLnDhh7NcfRGY62ieM7N5HM2"
+			]
+		},
+		"app/strings.sol": {
+			"keccak256": "0x9ecfd8e650034d33bdbf61f09ebf34b8296bc87d6ede915d5bbb2cf3905a1d11",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://29073e4f1a050673a07ba7997c08661ed431362b8deba4dd9ddd2e49aae1045b",
+				"dweb:/ipfs/QmNorqoa8dLjGBXB4jGq6JrmVSCPhYyrwukjYaNbJ9Brka"
+			]
+		}
+	},
+	"version": 1
+}

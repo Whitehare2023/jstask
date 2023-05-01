@@ -1,0 +1,374 @@
+{
+	"id": "d8c46e28e399d900765166bfab22ee6b",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.10",
+	"solcLongVersion": "0.6.10+commit.00c0fcaf",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"app/IUSER.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\npragma solidity^0.6.10;\n\nabstract contract IUSER{\n    // 注册接口设计\n    function register(string calldata username,string calldata passwd)virtual external;\n    // 登录接口设计\n    function login(string calldata username,string calldata passwd)virtual external view returns(bool);\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"app/IUSER.sol": {
+				"IUSER": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "string",
+									"name": "username",
+									"type": "string"
+								},
+								{
+									"internalType": "string",
+									"name": "passwd",
+									"type": "string"
+								}
+							],
+							"name": "login",
+							"outputs": [
+								{
+									"internalType": "bool",
+									"name": "",
+									"type": "bool"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"internalType": "string",
+									"name": "username",
+									"type": "string"
+								},
+								{
+									"internalType": "string",
+									"name": "passwd",
+									"type": "string"
+								}
+							],
+							"name": "register",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"login(string,string)": "58467dbc",
+							"register(string,string)": "3ffbd47f"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.10+commit.00c0fcaf\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"username\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"passwd\",\"type\":\"string\"}],\"name\":\"login\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"username\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"passwd\",\"type\":\"string\"}],\"name\":\"register\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"app/IUSER.sol\":\"IUSER\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"app/IUSER.sol\":{\"keccak256\":\"0xa880ba22d3d637f54c1350a8b6a4321e2af75db49add62adaee749c9864ea745\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://4f12b1d7a30a7171b3cf04b594c1247a243b164888142827cdc73b865d7eb1a0\",\"dweb:/ipfs/QmeBRQcMjTu1EoCtXnD5aim626y7x3pLhJwQVAmqdTEASL\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"app/IUSER.sol": {
+				"ast": {
+					"absolutePath": "app/IUSER.sol",
+					"exportedSymbols": {
+						"IUSER": [
+							18
+						]
+					},
+					"id": 19,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.6",
+								".10"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "36:23:0"
+						},
+						{
+							"abstract": true,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": false,
+							"id": 18,
+							"linearizedBaseContracts": [
+								18
+							],
+							"name": "IUSER",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"body": null,
+									"documentation": null,
+									"functionSelector": "3ffbd47f",
+									"id": 8,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "register",
+									"nodeType": "FunctionDefinition",
+									"overrides": null,
+									"parameters": {
+										"id": 6,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 3,
+												"mutability": "mutable",
+												"name": "username",
+												"nodeType": "VariableDeclaration",
+												"overrides": null,
+												"scope": 8,
+												"src": "134:24:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_calldata_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 2,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "134:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 5,
+												"mutability": "mutable",
+												"name": "passwd",
+												"nodeType": "VariableDeclaration",
+												"overrides": null,
+												"scope": 8,
+												"src": "159:22:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_calldata_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 4,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "159:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "133:49:0"
+									},
+									"returnParameters": {
+										"id": 7,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "198:0:0"
+									},
+									"scope": 18,
+									"src": "116:83:0",
+									"stateMutability": "nonpayable",
+									"virtual": true,
+									"visibility": "external"
+								},
+								{
+									"body": null,
+									"documentation": null,
+									"functionSelector": "58467dbc",
+									"id": 17,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "login",
+									"nodeType": "FunctionDefinition",
+									"overrides": null,
+									"parameters": {
+										"id": 13,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 10,
+												"mutability": "mutable",
+												"name": "username",
+												"nodeType": "VariableDeclaration",
+												"overrides": null,
+												"scope": 17,
+												"src": "245:24:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_calldata_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 9,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "245:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 12,
+												"mutability": "mutable",
+												"name": "passwd",
+												"nodeType": "VariableDeclaration",
+												"overrides": null,
+												"scope": 17,
+												"src": "270:22:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_calldata_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 11,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "270:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "244:49:0"
+									},
+									"returnParameters": {
+										"id": 16,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 15,
+												"mutability": "mutable",
+												"name": "",
+												"nodeType": "VariableDeclaration",
+												"overrides": null,
+												"scope": 17,
+												"src": "323:4:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bool",
+													"typeString": "bool"
+												},
+												"typeName": {
+													"id": 14,
+													"name": "bool",
+													"nodeType": "ElementaryTypeName",
+													"src": "323:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bool",
+														"typeString": "bool"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "322:6:0"
+									},
+									"scope": 18,
+									"src": "230:99:0",
+									"stateMutability": "view",
+									"virtual": true,
+									"visibility": "external"
+								}
+							],
+							"scope": 19,
+							"src": "61:270:0"
+						}
+					],
+					"src": "36:295:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

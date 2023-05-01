@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.6.10+commit.00c0fcaf"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "passwd",
+						"type": "string"
+					}
+				],
+				"name": "login",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "passwd",
+						"type": "string"
+					}
+				],
+				"name": "register",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"app/IUSER.sol": "IUSER"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"app/IUSER.sol": {
+			"keccak256": "0xa880ba22d3d637f54c1350a8b6a4321e2af75db49add62adaee749c9864ea745",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4f12b1d7a30a7171b3cf04b594c1247a243b164888142827cdc73b865d7eb1a0",
+				"dweb:/ipfs/QmeBRQcMjTu1EoCtXnD5aim626y7x3pLhJwQVAmqdTEASL"
+			]
+		}
+	},
+	"version": 1
+}

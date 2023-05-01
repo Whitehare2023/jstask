@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.6.10+commit.00c0fcaf"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_msg",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getMsg",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_msg",
+						"type": "string"
+					}
+				],
+				"name": "setMsg",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"app/hello.sol": "hello"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"app/hello.sol": {
+			"keccak256": "0x8a3046097c5a3410284ebb556059d683d9fa6dbff9f6fd7a0c7c31ea762ab87a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://623ad8bd1c9eea7e966b8897c3a4a765fa548d842e60143bc7afd516f83172c6",
+				"dweb:/ipfs/QmRbyv5j5zk685BrqG55iYk4fUa4EgS1ud7A1d7hE4SVGi"
+			]
+		}
+	},
+	"version": 1
+}

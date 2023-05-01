@@ -1,0 +1,418 @@
+{
+	"compiler": {
+		"version": "0.6.10+commit.00c0fcaf"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_owner",
+						"type": "string"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "worker",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "passwd",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "taskID",
+						"type": "uint256"
+					}
+				],
+				"name": "commit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "issuer",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "passwd",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "taskID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "comment",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"name": "confirm",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "issuer",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "passwd",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "desc",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "bonus",
+						"type": "uint256"
+					}
+				],
+				"name": "issue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "passwd",
+						"type": "string"
+					}
+				],
+				"name": "login",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_to",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "qryAllTasks",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "issuer",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "worker",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "desc",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "bonus",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint8",
+								"name": "status",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "comment",
+								"type": "string"
+							}
+						],
+						"internalType": "struct TaskInfo[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "taskID",
+						"type": "uint256"
+					}
+				],
+				"name": "qryOneTask",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "passwd",
+						"type": "string"
+					}
+				],
+				"name": "register",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "worker",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "passwd",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "taskID",
+						"type": "uint256"
+					}
+				],
+				"name": "take",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_from",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_to",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"xuanshang/jstask/app/Task.sol": "Task"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"xuanshang/jstask/app/IERC2000.sol": {
+			"keccak256": "0x35a4df8fcf97166036aa81d83fbb718f2cdc1fd0209c902e4aa66a1db40c49b9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://432befcbb3439462a817ec1fb2b46d3031ebd5a0e2b66a124ef0fc6511c74ca8",
+				"dweb:/ipfs/QmVGkD7T9MK1NxXiAFfkbsJab9p858TSeCfAuquMY4jj7t"
+			]
+		},
+		"xuanshang/jstask/app/IUSER.sol": {
+			"keccak256": "0xa880ba22d3d637f54c1350a8b6a4321e2af75db49add62adaee749c9864ea745",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4f12b1d7a30a7171b3cf04b594c1247a243b164888142827cdc73b865d7eb1a0",
+				"dweb:/ipfs/QmeBRQcMjTu1EoCtXnD5aim626y7x3pLhJwQVAmqdTEASL"
+			]
+		},
+		"xuanshang/jstask/app/SafeMath.sol": {
+			"keccak256": "0x5ffe1fff5ec05291fd983983a44e3abe34916973d9b439f9d51852145a02b668",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://f0fbdb75d743650e2a543c7cadebd9685a722dcab7b9f6fd6652347a76cd0b07",
+				"dweb:/ipfs/QmYoe9M4GCCBJ5z6QS4tR6jW8GzQkBjmAqNTaSL3pfoz9z"
+			]
+		},
+		"xuanshang/jstask/app/Task.sol": {
+			"keccak256": "0x4e7ae783843661528d46bcdf192c4270873be56c92446f6c7929edaf0e33890d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://81416b42fd9844c6e469c081f254a985cbcb688eaf2c7e3c1b693adfc3b077e6",
+				"dweb:/ipfs/QmQefAjnAC3dftbYQMKzQWE9gY7K2JH3jwpPWTfYBBXHCk"
+			]
+		},
+		"xuanshang/jstask/app/Token.sol": {
+			"keccak256": "0xc72fe9ec8229c6eb211bd797fb49166eb65cef5071909dbba4179bdfdcd06e10",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://15d39c5cdf8eb95fd74394e4ddff0c1b6b65175be7cef48bef407269894e050f",
+				"dweb:/ipfs/Qmd22mefcK6r8oMucbri21EtafTZYbgaKwsB2soJcnzKW6"
+			]
+		},
+		"xuanshang/jstask/app/User.sol": {
+			"keccak256": "0x4b0a9b9af5122bf5d587d3f2be660a768de0f5dc3db14882db8b50a31c3068eb",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://9830de810581f41caf0a275f001d98995e03f27fb76e1691cbfe649bf320f006",
+				"dweb:/ipfs/QmUPfrxgPjA2G9mRujP79DP3LZvZGciqeah4xsi1XL8qcq"
+			]
+		},
+		"xuanshang/jstask/app/strings.sol": {
+			"keccak256": "0xf85b2cc411010624382e7af1b05a40d5b3b8bb2e896c40534519cc96f8ee207b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://48f235787115e1faf5f5ec5e4564c1d8e0d4269908d27814a72888ed53c3b7d4",
+				"dweb:/ipfs/QmPXPvb69sJ37hDipUHHnLhVGLNn2Lb4ZzWq42zfnzZpt2"
+			]
+		}
+	},
+	"version": 1
+}

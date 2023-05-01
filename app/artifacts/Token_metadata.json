@@ -1,0 +1,175 @@
+{
+	"compiler": {
+		"version": "0.6.10+commit.00c0fcaf"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "_from",
+						"type": "string"
+					},
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "_to",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_owner",
+						"type": "string"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_to",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_from",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_to",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"app/Token.sol": "Token"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"app/IERC2000.sol": {
+			"keccak256": "0x35a4df8fcf97166036aa81d83fbb718f2cdc1fd0209c902e4aa66a1db40c49b9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://432befcbb3439462a817ec1fb2b46d3031ebd5a0e2b66a124ef0fc6511c74ca8",
+				"dweb:/ipfs/QmVGkD7T9MK1NxXiAFfkbsJab9p858TSeCfAuquMY4jj7t"
+			]
+		},
+		"app/SafeMath.sol": {
+			"keccak256": "0x5ffe1fff5ec05291fd983983a44e3abe34916973d9b439f9d51852145a02b668",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://f0fbdb75d743650e2a543c7cadebd9685a722dcab7b9f6fd6652347a76cd0b07",
+				"dweb:/ipfs/QmYoe9M4GCCBJ5z6QS4tR6jW8GzQkBjmAqNTaSL3pfoz9z"
+			]
+		},
+		"app/Token.sol": {
+			"keccak256": "0xc72fe9ec8229c6eb211bd797fb49166eb65cef5071909dbba4179bdfdcd06e10",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://15d39c5cdf8eb95fd74394e4ddff0c1b6b65175be7cef48bef407269894e050f",
+				"dweb:/ipfs/Qmd22mefcK6r8oMucbri21EtafTZYbgaKwsB2soJcnzKW6"
+			]
+		},
+		"app/strings.sol": {
+			"keccak256": "0xf85b2cc411010624382e7af1b05a40d5b3b8bb2e896c40534519cc96f8ee207b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://48f235787115e1faf5f5ec5e4564c1d8e0d4269908d27814a72888ed53c3b7d4",
+				"dweb:/ipfs/QmPXPvb69sJ37hDipUHHnLhVGLNn2Lb4ZzWq42zfnzZpt2"
+			]
+		}
+	},
+	"version": 1
+}

@@ -23,15 +23,18 @@ Node.js：用于实现后端服务器和接口。
 ```bash
 Copy code
 git clone https://github.com/yourusername/your-repo.git
+
 进入项目目录。
+
 ```bash
-Copy code
 cd your-repo
+
 安装依赖。
-Copy code
+```bash
 npm install
+
 运行项目。
-sql
-Copy code
+```bash
 npm start
-现在，你应该可以在浏览器中访问 http://localhost:3000 来查看项目。
+
+现在，你应该可以在浏览器中访问 http://localhost:9090 来查看项目。

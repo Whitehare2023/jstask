@@ -21,12 +21,12 @@ Node.js：用于实现后端服务器和接口。
 
 克隆这个仓库到你的本地机器上。
 ```bash
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/WhiteHare2023/jstask.git
 ```
 进入项目目录。
 
 ```bash
-cd your-repo
+cd jstask
 ```
 安装依赖。
 ```bash
